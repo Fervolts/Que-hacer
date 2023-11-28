@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Route, Routes } from 'react-router-dom';
+import Navb from "./components/Navb";
+import { Lista } from './components/Lista';
+import {To_do} from './components/To_do'
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navb/>
+
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Lista/>}/>
+          <Route path="/Quehacer" element={<To_do/>}/>
+
+        </Routes>
+
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
