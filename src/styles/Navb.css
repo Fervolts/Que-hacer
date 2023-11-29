@@ -59,6 +59,7 @@ nav {
 	}
 
 	header nav {
+		z-index:2;
 		position: fixed;
 		top: -100vh;
 		left: 0;
