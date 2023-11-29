@@ -40,13 +40,13 @@ useEffect(() => {
 
   return (
     
-    <div className="Center">
+    <div className="center-text">
     <Container >
      
     <div className="row" class="Containercards">
 
      
-      <Card className='customCard' style={{ width: "17rem" }}>
+      <Card className='customCard'>
         <Card.Img className="avatar" src={avatarURL} />
         <Card.Body>
           <Card.Title>{githubUsername}</Card.Title>
@@ -55,7 +55,7 @@ useEffect(() => {
       </Card>
       
    
-    <Card className='customCard' style={{ width: "17rem" }}>
+    <Card className='customCard'>
       <Card.Img className="avatar" src={avURL} />
       <Card.Body>
         <Card.Title>{gitUsername}</Card.Title>
