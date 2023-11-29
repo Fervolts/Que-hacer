@@ -13,10 +13,11 @@ function Navb() {
 
 	return (
 		<header>
-			<h3>Quehaceres!</h3>
+			<h3>QueHaceres</h3>
 			<nav ref={navRef}>
-				<a href="/Quehacer">Añade a la lista!</a>
-				<a href="/">Lista!</a>
+				<a href="/">Inicio</a>
+				<a href="/agregartasks">Añadir Tareas</a>
+				<a href="/listas">Lista de tareas</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
