@@ -9,6 +9,7 @@ const CrudList = ({ Tasks, setEditData, deleteTask }) => {
         <tr>
           <td>Task</td>
           <td>Hora estimada</td>
+          <td>Descripcion</td> 
           <td></td>
         </tr>
       </thead>
@@ -19,6 +20,7 @@ const CrudList = ({ Tasks, setEditData, deleteTask }) => {
           return <tr key={index}>
                   <td>{Task.Task}</td>
                   <td>{Task.Hora}</td>
+                  <td>{Task.Descripcion}</td> 
                   <td>
                     <button
                     onClick={() => setEditData(Task)}>Editar</button>
