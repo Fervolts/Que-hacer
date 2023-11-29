@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Container from 'react-bootstrap/Container';
 import Card from "react-bootstrap/Card";
 import '../styles/Gitusers.css';
+var Fervp = 'https://github.com/Fervolts';
+var Killu = 'https://github.com/JustKillu';
 function App() {
     var [avatarURL, setAvatarURL] = useState();
     var [githubUsername, setGitHubUsername] = useState();
@@ -46,21 +48,21 @@ useEffect(() => {
     <div className="row" class="Containercards">
 
      
-      <Card className='customCard'>
+      <Card onClick={() => window.open(Killu, '_blank')} className='customCard'>
         <Card.Img className="avatar" src={avatarURL} />
         <Card.Body>
           <Card.Title>{githubUsername}</Card.Title>
-
         </Card.Body>
+         
       </Card>
       
    
-    <Card className='customCard'>
+    <Card onClick={() => window.open(Fervp, '_blank')} className='customCard'>
       <Card.Img className="avatar" src={avURL} />
       <Card.Body>
-        <Card.Title>{gitUsername}</Card.Title>
-
+        <Card.Title>{gitUsername}</Card.Title> 
       </Card.Body>
+      
     </Card>
   </div>
   </Container>
