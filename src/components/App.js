@@ -43,11 +43,14 @@ const CrudApp = () => {
     }
   }
 
+
+  const topTasks = [...Tasks].sort((a, b) => new Date(b.fecha) - new Date(a.fecha)).slice(0, 3);
+
   return <>
-    <h2>Agrega Tasks!</h2>
-    <Crudto_do addTask={addTask} editTask={editTask} editData={editData}/>
-    <CrudLista Tasks={Tasks} setEditData={setEditData} deleteTask={deleteTask}/>
-  </>
+  <h2>Agrega Tasks!</h2>
+  <Crudto_do addTask={addTask} editTask={editTask} editData={editData}/>
+  <CrudLista Tasks={topTasks} setEditData={setEditData} deleteTask={deleteTask}/>
+</>
 }
 
 export default CrudApp
