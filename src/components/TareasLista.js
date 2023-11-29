@@ -112,7 +112,7 @@ const TareasLista = () => {
               <button onClick={(e) => { e.stopPropagation(); handleEditClick(index); }}>Editar</button>
               <button onClick={() => handleStatusChange(index, 'completado')}>Completado</button>
               <button onClick={() => handleStatusChange(index, 'enprogreso')}>En Progreso</button>
-              <button onClick={() => handleStatusChange(index, 'eliminado')}>Eliminado</button>
+              <button onClick={() => handleStatusChange(index, 'eliminado')}>Eliminar</button>
             </>
           )}
         </>
