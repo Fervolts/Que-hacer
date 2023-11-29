@@ -1,0 +1,52 @@
+/* Estilos para el formulario */
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las etiquetas */
+.task-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilos para los campos de entrada */
+.task-input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para los botones */
+.task-submit,
+.task-reset {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.task-submit {
+    background-color: #28a745;
+}
+
+.task-submit:hover {
+    background-color: #218838;
+}
+
+.task-reset {
+    background-color: #dc3545;
+}
+
+.task-reset:hover {
+    background-color: #c82333;
+}

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Crudto_do from './To_do'
-import CrudLista from './Lista'
-
+import ListaApp from './TareasLista'
 const CrudApp = () => {
 
   const [editData, setEditData] = useState(null);
@@ -33,23 +32,9 @@ const CrudApp = () => {
     setEditData(null)
   }
 
-  // Eliminar un Task
-  const deleteTask = id => {
-    const isDelete = window.confirm(`¿Deseas eliminar el Task?`)
-
-    if (isDelete) {
-      const newTasks = Tasks.filter(el => el.id !== id)
-      setTasks(newTasks);
-    }
-  }
-
-
-  const topTasks = [...Tasks].sort((a, b) => new Date(b.fecha) - new Date(a.fecha)).slice(0, 3);
-
   return <>
-  <h2>Agrega Tasks!</h2>
   <Crudto_do addTask={addTask} editTask={editTask} editData={editData}/>
-  <CrudLista Tasks={topTasks} setEditData={setEditData} deleteTask={deleteTask}/>
+<ListaApp/>
 </>
 }
 
